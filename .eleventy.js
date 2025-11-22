@@ -5,6 +5,8 @@ export default function (eleventyConfig) {
 
   return {
     htmlTemplateEngine: "njk",
+    pathPrefix: "/ThePineRidgePost/",
+
     dir: {
       input: ".",
       output: "_site",
