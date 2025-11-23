@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ '/styles/style.css' | url }}" />
-    <script src="/script.js"></script>
+    <script src="{{ '/script.js' | url}}"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/images/Favicon2.png"> 
+    <link rel="icon" type="image/x-icon" href="{{ '/images/Favicon2.png' | url }}"> 
     <title>The Pine Ridge Post</title> 
   </head>
   <body>
     <header>
       
-      <a href="/index/">
+      <a href="{{ '/index/' | url }}">
         <img
           class="logo"
           src="/images/The Pine Ridge Post.png"
@@ -40,7 +40,7 @@
       </div>
       <button title="Turn on Dark Mode" id="dark" onclick="ButtonSwitchDark()">
         <img
-          src="/images/dark_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+          src="{{ '/images/dark-mode.svg' | url }}"
           alt="dark mode"
         />
       </button>
@@ -62,7 +62,7 @@
       <div class="pinned-flex">
         {% for item in collections.pinned | reverse %}
         <div class="card">
-          <a href="{{ item.url }}">
+          <a href="{{ item.url | url }}">
           <img
             src="{{ item.data.image }}"
             alt="{{ item.data.title }}"
