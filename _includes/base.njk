@@ -4,29 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="{{ '/styles/style.css' | url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/images/Favicon2.png">
-  <script src="/script.js"></script>
+  <script src="{{ '/script.js' | url }}"></script>
 </head>
 <body>
   <header>
       
-      <a href="/index">
+      <a href="{{ '/index/' | url }}">
         <img
           class="logo"
-          src="/images/The Pine Ridge Post.png"
+          src="{{ '/images/The Pine Ridge Post.png' | url }}"
           alt="The Pine Ridge Post"
-          style="width: 21vw"
+          style="width: 21vw" 
         />
-        <img
-          class="logoSmall"
-          src="/images/squareLogo.png"
-          alt="The Pine Ridge Post"
-          style="width: 18vw"
-        />
+      <img
+        class="logoSmall"
+        src="/images/squareLogo.png"
+        alt="The Pine Ridge Post"
+        style="width: 18vw"
+      />
       </a>
       <div class="account">
         <p>
@@ -37,7 +37,7 @@
       </div>
       <button title="Turn on Dark Mode" id="dark" onclick="ButtonSwitchDark()">
         <img
-          src="/images/dark_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+          src="{{ '/images/dark-mode.svg' | url }}"
           alt="dark mode"
         />
       </button>
@@ -47,11 +47,11 @@
         onclick="ButtonSwitchLight()"
       >
         <img
-          src="/images/light_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+          src="{{ '/images/lightMode.svg' | url }}"
           alt="Light Mode"
         />
       </button>
-  </header>
+    </header>
 
   <main>
     {{ content | safe }}
