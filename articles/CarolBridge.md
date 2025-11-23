@@ -21,7 +21,7 @@ But thanks to town mayor Jimmy Hynes, the bridge is being rebuilt. Construction 
 A big thank you to our sponsors for making this possible! Pine Ridge High has put on a wonderful fund-raiser to help fund the building of the bridge.\
 The school organized a used book sale. Students brought lightly used books to the school and hosted their own book fair. The cafeteria was turned into a library where students could buy books that were interesting to them. Money from those books was saved up to start building the bridge.
 
-<a href="/images/bookFairFlyer.pdf" target="_blank" class="md"><u>/images/bookFairFlyer.pdf</u></a>
+<a href="{{ '/images/bookFairFlyer.pdf' | url }}" target="_blank" class="md"><u>/images/bookFairFlyer.pdf</u></a>
 
 The school raised over $8,000 for the cause, which covered a little over 80% of the cost.\
 "We're so thankful for everyone who participated. The night was amazing, and we're happy that the money is going to a good cause." Says school principal Brenda Johnson.
